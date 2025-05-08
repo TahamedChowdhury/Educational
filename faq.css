@@ -1,121 +1,35 @@
-body{
-    background:  #f4f4f4;
-  }
-  
-  .container{
-    width: 80%;
-    margin: 50px auto;
-  }
-  .contactbox{
-  background: white;
-  display: flex;
-  
-  }
-  .contactleft{
-    flex-basis: 60%;
-    padding: 40px 60px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  .contactright{
-    flex-basis: 40%;
-    padding: 40px;
-    background:#273549;
-    color: white;
-  }
-  h1{
-    margin-bottom: 10px ;
-  }
-  .container p{
-    margin-bottom: 40px ;
-    font-family: "Winky Rough", sans-serif;
-    font-optical-sizing: auto;
-  
-  }
-  .inputrow{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-  .inputrow.inputgroup{
-    flex-basis: 45%;
-  }
-  input{
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid black;
-    outline: none;
-    padding-bottom: 5px;
-  }
-  textarea{
-    width: 100%;
-    border: 1px solid black;
-    outline: none;
-    padding-bottom: 10px;
-    box-sizing: border-box;
-  }
-  label{ 
-    margin-bottom: 6px;
-    display: block;
-    color: black;
-  }
-  button{
-    background: #3498db;
-    width: 100px;
-    border: none;
-    outline: none;
-    color: white;
-    height: 35px;
-    border-radius: 30px;
-    margin-top: 20px; 
-    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
-  }
-  .contactleft h3{
-    color:rgb(23, 41, 143) ;
-    font-weight: 600;
-    margin-bottom: 30px;
-  }
-  .contactright h3{
-    font-weight: 600;
-    margin-bottom: 30px;
-  }
-  tr td:first-child{
-    padding-right: 20px;
-  }
-  tr td{
-    padding-top: 20px;
-  }
-  button:hover{
-    color: rgb(0, 217, 255);
-  }
-  header{
-      
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header{
+    
     display: flex;
     height: 70px;
-    
     justify-content:space-between;
     align-items: center;
     text-align: center;
     background-color:rgb(0, 3, 3);
-    
-  
-  
-  }
-  .three{
+
+
+}
+.three{
     display: flex;
     justify-content: space-between;
    
-  }
-  .three li{
+}
+.three li{
     margin: 30px;
     
-  }
-  .three li a{
+}
+.three li a{
     
     color: white;
     text-decoration: none;
-  }
-  .i{
+}
+.i{
     margin-left: 50px;
     height: 100px;
    
@@ -134,7 +48,114 @@ body{
     margin: 0px 5px;
     padding: 0;
   }
-  .all{
+  button{
+    background: rgb(255, 255, 255);
+    width: 70px;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    height: 35px;
+    border-radius: 30px; 
+    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+  }
+  input{
+    height: 30px;
+    width: 200px;
+  }
+  form{
+    padding-right: 20px;
+  }
+
+.faq-section {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.faq-item {
+    margin: 15px 0;
+    
+}
+
+.faq-question {
+    width: 100%;
+    background-color: #3498db;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.faq-question:hover {
+    background-color:#2980b9;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #e9ecef;
+    margin-top: 5px;
+    padding: 0 15px;
+    border-radius: 5px;
+    transition: max-height 0.3s ease;
+}
+
+.faq-answer p {
+    padding: 15px;
+    margin: 0;
+}
+.faq-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-2);
+    margin-bottom: var(--spacing-8);
+    justify-content: center;
+    
+  }
+  .category-btn {
+    
+    background-color: #3498db;
+    border: none;
+    padding: 16px 24px;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 50px;
+    width: 180px;
+    
+  }
+  .category-btn:hover{
+    background-color: #2980b9;
+    transform: translateY(-2px);
+  }
+  .toggle-icon {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    transition: transform var(--transition-fast) var(--transition-timing);
+}
+.qu{
+   padding-right: 50px;
+}
+.all{
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #1d2b44;
